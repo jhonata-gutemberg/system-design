@@ -15,3 +15,6 @@ such as images or videos.
 - [X] High availability
 - [X] Should handle a high throughput
 - [X] Low latency
+
+## Architecture
+![Architecture](docs/news-feed.excalidraw.png)
