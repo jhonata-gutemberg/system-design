@@ -14,3 +14,25 @@
 - [ ] Automatic scaling: The addition/deletion of servers should be automatic based on traffic
 - [ ] Tunable consistency
 - [ ] Low latency
+
+## Architecture
+![Key-value-store](docs/key-value-store.excalidraw.png)
+<!-- - Virtual nodes
+
+### Inconsistency resolution
+- Versioning
+- Vector locks (vector clocks)
+
+### Failure detection
+- All-to-all multicast
+- Gossip protocol
+
+### Temporary failures
+- Quorum approach
+- Sloppy quorum
+- Hinted handoff
+
+### Permanent failures
+- Anti-entropy protocol
+- Merkle tree
+-->
