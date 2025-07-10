@@ -18,17 +18,22 @@
 ## Architecture
 ![Key-value-store](docs/key-value-store.excalidraw.png)
 
-### Compression and consistent hashing
+### Data compression and consistent hashing
 To optimize the memory usage of single store instance, compression can be used.
 But this is not enough to store a massive amount of data, to that the data need to be distributed 
 through other services. A hash can be used to decide which server the information will be stored 
 or retrieved. The downside of this approach is that the hash generation depends on the amount of 
 available instances, if this size was increased by adding a new instance or decreased by removing 
-the instance or inavailability, the data can be sent to the wrong instance and the system 
+the instance or unavailability, the data can be sent to the wrong instance and the system 
 can become inconsistent. To address this issue consistent hashing can be used.
 
-<!-- - Virtual nodes
+### Data replication
+Partitioning the data across multiple instances can solve the scalability requirements, 
+however the system can present unavailability if an instance goes down. In order to 
+prevent that, the data can be replicated to the next N servers on the ring, where N 
+is a configurable parameter.
 
+<!--
 ### Inconsistency resolution
 - Versioning
 - Vector locks (vector clocks)
