@@ -16,7 +16,7 @@
 - [ ] Low latency
 
 ## Architecture
-![Key-value-store](docs/key-value-store.excalidraw.png)
+![Key-value-store](assets/key-value-store.excalidraw.png)
 
 ### Data compression and consistent hashing
 To optimize the memory usage of single store instance, compression can be used.
@@ -28,10 +28,21 @@ the instance or unavailability, the data can be sent to the wrong instance and t
 can become inconsistent. To address this issue consistent hashing can be used.
 
 ### Data replication
-Partitioning the data across multiple instances can solve the scalability requirements, 
-however the system can present unavailability if an instance goes down. In order to 
-prevent that, the data can be replicated to the next N servers on the ring, where N 
+Partitioning the data across multiple instances can solve the scalability requirements,
+however the system can present unavailability if an instance goes down. In order to
+prevent that, the data can be replicated to the next N servers on the ring, where N
 is a configurable parameter.
+
+### Consistency
+
+• Inconsistency resolution
+• Handling failures
+• System architecture diagram
+• Write path
+• Read path
+
+
+### Failure detection
 
 <!--
 ### Inconsistency resolution
