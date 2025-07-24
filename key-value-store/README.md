@@ -34,6 +34,9 @@ prevent that, the data can be replicated to the next N servers on the ring, wher
 is a configurable parameter.
 
 ### Consistency
+To ensure consistency across the replicas we can use a Quorum consensus strategy. 
+Basically we can define values for write and read operations and the coordinator need to acknowledge 
+the number of servers corresponding to the values.
 
 • Inconsistency resolution
 • Handling failures
