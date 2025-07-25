@@ -1,6 +1,8 @@
 # System design
 
-[Key value store](key-value-store) | [News feed](news-feed)
+[Rate limiter](https://github.com/jhonata-gutemberg/rate-limiter) | 
+[Key value store](key-value-store) | 
+[News feed](news-feed)
 
 ## About
 System design is the process of defining the architecture, components, modules, interfaces, and data flow of a software 
