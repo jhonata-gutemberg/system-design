@@ -2,7 +2,8 @@
 
 [Rate limiter](https://github.com/jhonata-gutemberg/rate-limiter) | 
 [Key value store](key-value-store) | 
-[News feed](news-feed)
+[News feed](news-feed) |
+[URL shortener](url-shortener)
 
 ## About
 System design is the process of defining the architecture, components, modules, interfaces, and data flow of a software 
