@@ -30,3 +30,6 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 ![Peak QPS](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}QPS_{peak}=2*QPS=800)
 
 ![Storage](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}\text{Storage\_capacity}=1billion_{requests/day}*500kb_{\text{average\_web\_page\_size}}*12_{months}*\5_{years}=30_{PB})
+
+### Implementation
+
