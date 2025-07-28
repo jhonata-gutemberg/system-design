@@ -13,3 +13,10 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 - [x] Should add to the list of URLs to be downloaded
 - [ ] Should consider newly added or edited web pages
 - [ ] Duplicated content should be ignored
+### Non functional
+- [x] Should be able to handle 1 billion pages per month
+- [x] Need to store HTML pages up to 5 years
+- [ ] High scalable
+- [ ] Robustness
+- [ ] Politeness
+- [ ] Extensibility
