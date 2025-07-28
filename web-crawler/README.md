@@ -20,3 +20,5 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 - [ ] Robustness
 - [ ] Politeness
 - [ ] Extensibility
+## Architecture
+![Web crawler](assets/web-crawler.excalidraw.png)
