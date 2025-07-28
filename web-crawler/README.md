@@ -22,3 +22,11 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 - [ ] Extensibility
 ## Architecture
 ![Web crawler](assets/web-crawler.excalidraw.png)
+### Back of the envelope
+![Average](https://latex.codecogs.com/svg.image?Average\_web\_page\_size=500kb)
+
+![QPS](https://latex.codecogs.com/svg.image?QPS=\frac{1billon_{requests/day}}{30_{days}*24_{hours}*3600_{seconds}}\cong400)
+
+![Peak QPS](https://latex.codecogs.com/svg.image?QPS_{peak}=2*QPS=800)
+
+![Storage](https://latex.codecogs.com/svg.image?Storage\_capacity=1&space;billion_{requests/day}*500kb_{average\_web\_page\_size}*12_{months}*\5_{years}=30_{PB})
