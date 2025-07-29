@@ -3,7 +3,7 @@
 [Rate limiter](https://github.com/jhonata-gutemberg/rate-limiter) | 
 [Key value store](key-value-store) | 
 [News feed](news-feed) |
-[URL shortener](url-shortener)
+[URL shortener](url-shortener) |
 [Web crawler](web-crawler)
 
 ## About
