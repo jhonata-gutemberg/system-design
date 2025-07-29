@@ -33,4 +33,5 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 ## Architecture
 ![Web crawler](assets/web-crawler.excalidraw.png)
 The web crawling starts by adding a list of URL's (seeds) to the queue url.frontier, this queue will be consumed by multiple workers that will download the HTML from the pages, check if the content already exists on the content storage, extract the links, apply filters, check if the link was already seen on the URL storage and add the new links to the url.frontier. The crawler algorithm can be implemented with BFS (Breadth First Search).
-
+### Freshness
+To consider newly added or edited web pages, we can recrawl from time to time, based on web page's update history and prioritize URLs, by recrawling important pages first and more frequently.
