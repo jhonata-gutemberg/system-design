@@ -37,3 +37,5 @@ The web crawling starts by adding a list of URL's (seeds) to the queue url.front
 To consider newly added or edited web pages, we can recrawl from time to time, based on web page's update history and prioritize URLs, by recrawling important pages first and more frequently.
 ### Robustness
 To ensure robustness we can take advantage of techniques like consistent hashing to add new serves and scale the database, save crawl states and data to recovery in case of failure, along with robust exception handling and data validation. We also must apply filters by avoid spider traps.
+### Politeness
+To avoid sending too many requests and possibly be treat like a DOS attack, we can add a delay between the requests.
