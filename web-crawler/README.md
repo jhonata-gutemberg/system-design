@@ -20,9 +20,8 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 - [ ] Robustness
 - [ ] Politeness
 - [ ] Extensibility
-## Architecture
-![Web crawler](assets/web-crawler.excalidraw.png)
-### Back of the envelope
+
+## Back of the envelope
 ![Average](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}Average\;web\;page\;size=500kb)
 
 ![QPS](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}QPS=\frac{1billon_{requests/day}}{30_{days}*24_{hours}*3600_{seconds}}\cong400)
@@ -31,5 +30,7 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 
 ![Storage](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}Storage\;capacity=1billion_{requests/day}*500kb_{average\;web\;page\;size}*12_{months}*\5_{years}=30_{PB})
 
-### Implementation
+## Architecture
+![Web crawler](assets/web-crawler.excalidraw.png)
+The web crawling starts by adding a list of URL's (seeds) to the queue url.frontier, this queue will be consumed by multiple workers that will download the HTML from the pages, check if the content already exists on the content storage, extract the links, apply filters, check if the link was already seen on the URL storage and add the new links to the url.frontier. The crawler algorithm can be implemented with BFS (Breadth First Search).
 
