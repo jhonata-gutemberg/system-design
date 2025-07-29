@@ -11,15 +11,15 @@ A **web crawler**, also known as a **spider** or **bot**, is a program or automa
 - [x] Should download all the web pages addressed by the URL list
 - [x] Should extract URLs from these pages
 - [x] Should add to the list of URLs to be downloaded
-- [ ] Should consider newly added or edited web pages
-- [ ] Duplicated content should be ignored
+- [X] Should consider newly added or edited web pages
+- [X] Duplicated content should be ignored
 ### Non functional
 - [x] Should be able to handle 1 billion pages per month
 - [x] Need to store HTML pages up to 5 years
-- [ ] High scalable
-- [ ] Robustness
-- [ ] Politeness
-- [ ] Extensibility
+- [X] High scalable
+- [X] Robustness
+- [X] Politeness
+- [X] Extensibility
 
 ## Back of the envelope
 ![Average](https://latex.codecogs.com/png.image?\large&space;\dpi{100}\bg{white}Average\;web\;page\;size=500kb)
@@ -39,3 +39,5 @@ To consider newly added or edited web pages, we can recrawl from time to time, b
 To ensure robustness we can take advantage of techniques like consistent hashing to add new serves and scale the database, save crawl states and data to recovery in case of failure, along with robust exception handling and data validation. We also must apply filters by avoid spider traps.
 ### Politeness
 To avoid sending too many requests and possibly be treat like a DOS attack, we can add a delay between the requests.
+### Extensibility
+The web crawler should be implemented in using an modular architecture, that allows easy adding new modules, to process other types of contents. To do that follow the SOLID principles like Open-Closed, Liskov Substitution and Open Closed will be crucial. We can take advantage of patterns like strategy also.
