@@ -9,3 +9,5 @@
 - [x] Should support 50 million daily active users (DAU).
 - [x] The chat history should be stored indefinitely.
 - [x] Low latency
+## Architecture
+![Chat system](assets/chat-system.excalidraw.png)
