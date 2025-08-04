@@ -1,6 +1,6 @@
 # System design
 
-[Rate limiter](https://github.com/jhonata-gutemberg/rate-limiter) | 
+[Rate limiter](rate-limiter) | 
 [Key value store](key-value-store) | 
 [News feed](news-feed) |
 [URL shortener](url-shortener) |
