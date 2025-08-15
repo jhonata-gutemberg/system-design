@@ -1,7 +1,7 @@
 # URL shortening service
 [⬅️ Go back](../..)
 
-## Requirements
+## 📋 Requirements
 ### Functional
 - Users should be able to create new URLs
 - Users should be redirected to the right URL when accessing the short one
@@ -12,11 +12,11 @@
 - Scalability
 - Data should store indefinitely unless there was an expiration date
 
-## Characteristics
+## 🧬 Characteristics
 - Short should have from 6 to 8 characters being a combination of characters alphanumeric and decimals
 - The system should handle 10 million DAU
 
-## High-level design
+## 🏗️ High-level design
 The system was divided into shortening and redirection services, for independent scale. 
 Adding multiple instances of those services, enables scalability and availability. 
 Also creating read and write replicas for the database and considering sharding. 
@@ -24,7 +24,7 @@ A cache layer can be included to improve the throughput.
 
 ![High-level](assets/high-level.png)
 
-## Deep dive
+## 🔍 Deep dive
 ### How to ensure uniqueness and avoid collisions when generating short codes — especially at scale with 10M daily active users?
 - Generating sequential IDs 
   - The problem with this approach is generate unique IDs in a distributed systems.
