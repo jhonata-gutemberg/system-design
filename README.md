@@ -20,7 +20,7 @@ and effectively, especially when the system is large or expected to handle a lot
 | Problem                                                                   | Difficulty                                              |                         Status                          |
 |:--------------------------------------------------------------------------|:--------------------------------------------------------|:-------------------------------------------------------:|
 | [Design a Simple URL Shortening Service](problems/url-shortening-service) | ![License](https://img.shields.io/badge/Easy-greenblue) | ![License](https://img.shields.io/badge/Done-greenblue) |
-| Design an Efficient Parking Lot System                                    | ![License](https://img.shields.io/badge/Easy-greenblue) |   ![License](https://img.shields.io/badge/Todo-gray)    |
+| [Design an Efficient Parking Lot System](problems/parking-lot-system)     | ![License](https://img.shields.io/badge/Easy-greenblue) | ![License](https://img.shields.io/badge/Done-greenblue) |
 | Design a Fitness Tracking App                                             | ![License](https://img.shields.io/badge/Easy-greenblue) |   ![License](https://img.shields.io/badge/Todo-gray)    |
 | Design a Weather Reporting System                                         | ![License](https://img.shields.io/badge/Easy-greenblue) |   ![License](https://img.shields.io/badge/Todo-gray)    |
 | Design Twitter                                                            | ![License](https://img.shields.io/badge/Medium-orange)  |   ![License](https://img.shields.io/badge/Todo-gray)    |
