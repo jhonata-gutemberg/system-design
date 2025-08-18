@@ -37,4 +37,4 @@ The parking service publish send a message to the create.reservation queue, th p
 the payment. When the processing is done, it publishers on the payment.completed queue, that is consumed by the reservation service.
 The reservation service will update the database and the cache making the reservation and publish a message on the notification queue, for the notification service to handle.
 
-![Parking lot system](assets/parking-lot.png)
+![Parking lot system](docs/assets/parking-lot.png)
