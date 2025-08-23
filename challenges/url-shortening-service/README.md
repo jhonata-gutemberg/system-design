@@ -1,5 +1,4 @@
-# URL shortening service
-[⬅️ Go back](../..)
+![URL shortening](docs/assets/url-shortening.png)
 
 ## 📋 Requirements
 ### Functional
@@ -22,7 +21,7 @@ Adding multiple instances of those services, enables scalability and availabilit
 Also creating read and write replicas for the database and considering sharding. 
 A cache layer can be included to improve the throughput.
 
-![High-level](assets/high-level.png)
+![High-level](docs/assets/high-level.png)
 
 ## 🔍 Deep dive
 ### How to ensure uniqueness and avoid collisions when generating short codes — especially at scale with 10M daily active users?
@@ -41,9 +40,9 @@ A cache layer can be included to improve the throughput.
 - The data could be fetched from the database if there is a cache miss or unavailability.
 - A worker can choose which data should be on the cache, all the new URLs or just the more popular one.
 
-![Deep dive cache](assets/deep-dive-cache.png)
+![Deep dive cache](docs/assets/deep-dive-cache.png)
 
 ### How would your worker decide which URLs to preload into the cache?
 Instead of a worker, a service that reads from an analytics database can be added to take the decision based on the analytics.
 
-![Final design](assets/final-design.png)
+![Final design](docs/assets/final-design.png)
