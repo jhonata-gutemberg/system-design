@@ -1,5 +1,4 @@
-# Parking lot system
-[⬅️ Go back](../..)
+![Parking lot](docs/assets/parking-lot.png)
 
 ## 📋 Requirements
 ### Functional
@@ -10,8 +9,10 @@
 ### Non-functional
 - High availability
 - Scalability
+
 ## 🧬 Characteristics
 - 1 million monthly active users
+
 ## 🏗️ High-level design
 First, a user need to check if there is a spot available. 
 To do that, we can add a parking service and a database.
@@ -22,6 +23,7 @@ In this design we have availability problems, because our server and database is
 In this away, the service can be break into two components, parking and payment. 
 The parking service, calls the payment service and if the payment was approved, the user can reserve a slot.
 To improve the database, we could add read and write replicas to ensure availability.
+
 ## 🔍 Deep dive
 ### How to avoid double booking?
 For this design double booking can be a problem. 
@@ -37,4 +39,4 @@ The parking service publish send a message to the create.reservation queue, th p
 the payment. When the processing is done, it publishers on the payment.completed queue, that is consumed by the reservation service.
 The reservation service will update the database and the cache making the reservation and publish a message on the notification queue, for the notification service to handle.
 
-![Parking lot system](docs/assets/parking-lot.png)
+![Parking lot system](docs/assets/design.png)
