@@ -22,7 +22,7 @@ and effectively, especially when the system is large or expected to handle a lot
 | [Design a Simple URL Shortening Service](challenges/url-shortening-service) | ![License](https://img.shields.io/badge/Easy-greenblue) | ![License](https://img.shields.io/badge/Done-greenblue) |
 | [Design an Efficient Parking Lot System](challenges/parking-lot-system)     | ![License](https://img.shields.io/badge/Easy-greenblue) | ![License](https://img.shields.io/badge/Done-greenblue) |
 | [Design a Fitness Tracking App](challenges/fitness-tracking-app)            | ![License](https://img.shields.io/badge/Easy-greenblue) | ![License](https://img.shields.io/badge/Done-greenblue) |
-| Design a Weather Reporting System                                           | ![License](https://img.shields.io/badge/Easy-greenblue) |   ![License](https://img.shields.io/badge/Todo-gray)    |
+| [Design a Weather Reporting System](challenges/weather-reporting-system)    | ![License](https://img.shields.io/badge/Easy-greenblue) | ![License](https://img.shields.io/badge/Done-greenblue) |
 | Design Twitter                                                              | ![License](https://img.shields.io/badge/Medium-orange)  |   ![License](https://img.shields.io/badge/Todo-gray)    |
 | Design Facebook Messenger                                                   | ![License](https://img.shields.io/badge/Medium-orange)  |   ![License](https://img.shields.io/badge/Todo-gray)    |
 | Design an API Rate Limiter                                                  | ![License](https://img.shields.io/badge/Medium-orange)  |   ![License](https://img.shields.io/badge/Todo-gray)    |
