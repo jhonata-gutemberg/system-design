@@ -17,18 +17,13 @@ and effectively, especially when the system is large or expected to handle a lot
 
 ## 💪 Exercises
 
-| Challenge                                                       |
-|:----------------------------------------------------------------|
-| [URL Shortening Service](challenges/url-shortening-service)     |
-| [Parking Lot System](challenges/parking-lot-system)             |
-| [Fitness Tracking App](challenges/fitness-tracking-app)         |
-| [Weather Reporting System](challenges/weather-reporting-system) |
-| [Rate Limiter](challenges/rate-limiter)                         |
-| Design Youtube or Netflix                                       |
-| Design Typeahead Suggestion                                     |
-| Design Twitter Search                                           |
-| Design Instagram                                                |
-| Design Ticketmaster                                             |
-| Design Dropbox                                                  |
-| Design Uber Backend                                             |
-| Design Yelp or Nearby Friends                                   |
+| Challenge                                                   |
+|:------------------------------------------------------------|
+| [URL Shortening Service](challenges/url-shortening-service) |
+| [Parking Lot System](challenges/parking-lot-system)         |
+| [Fitness Tracking App](challenges/fitness-tracking-app)     |
+| [Rate Limiter](challenges/rate-limiter)                     |
+| Chat System                                                 |
+| Key Value Store                                             |
+| News Feed                                                   |
+| Web Crawler                                                 |
