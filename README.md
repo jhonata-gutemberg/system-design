@@ -23,9 +23,7 @@ and effectively, especially when the system is large or expected to handle a lot
 | [Parking Lot System](challenges/parking-lot-system)             |
 | [Fitness Tracking App](challenges/fitness-tracking-app)         |
 | [Weather Reporting System](challenges/weather-reporting-system) |
-| Design Twitter                                                  |
-| Design Facebook Messenger                                       |
-| Design an API Rate Limiter                                      |
+| [Rate Limiter](challenges/rate-limiter)                         |
 | Design Youtube or Netflix                                       |
 | Design Typeahead Suggestion                                     |
 | Design Twitter Search                                           |
