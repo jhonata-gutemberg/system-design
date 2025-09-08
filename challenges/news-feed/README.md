@@ -1,4 +1,4 @@
-# News feed
+![News feed](docs/assets/news-feed.png)
 
 ## 📋 Requirements
 

@@ -25,5 +25,5 @@ and effectively, especially when the system is large or expected to handle a lot
 | [Rate Limiter](challenges/rate-limiter)                     |
 | [Chat System](challenges/chat-system)                       |
 | [Key Value Store](challenges/key-value-store)               |
-| News Feed                                                   |
+| [News Feed](challenges/news-feed)                           |
 | Web Crawler                                                 |
