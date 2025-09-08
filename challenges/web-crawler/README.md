@@ -1,4 +1,4 @@
-# Web crawler
+![Web crawler](docs/assets/web-crawler.png)
 ## 📋 Requirements
 ### Functional
 - Should download all the web pages addressed by the URL list

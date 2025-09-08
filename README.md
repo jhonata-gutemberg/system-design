@@ -26,4 +26,4 @@ and effectively, especially when the system is large or expected to handle a lot
 | [Chat System](challenges/chat-system)                       |
 | [Key Value Store](challenges/key-value-store)               |
 | [News Feed](challenges/news-feed)                           |
-| Web Crawler                                                 |
+| [Web Crawler](challenges/web-crawler)                       |
