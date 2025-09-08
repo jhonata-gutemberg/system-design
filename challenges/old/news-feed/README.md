@@ -1,24 +1,20 @@
 # News feed
 
-## Context
-A system for a news feed application who supports 10 million daily active users (DAU), 
-where each user can have 5 thousand friends and their respective posts can contain media files 
-such as images or videos.
-
-## Requirements
+## 📋 Requirements
 
 ### Functional
-- [X] Make posts
-- [X] See friends news feed
-- [X] Feeds sorted in reverse chronological order
+- Make posts
+- See friends news feed
+- Feeds sorted in reverse chronological order
 
 ### Non-functional
-- [X] High availability
-- [X] Should handle a high throughput
-- [X] Low latency
+- High availability
+- Should handle a high throughput
+- Low latency
 
-## Architecture
-![Architecture](assets/news-feed.excalidraw.png)
+## 🏗️ High-level design
+![Architecture](docs/assets/news-feed.excalidraw.png)
+
 For this design the system was split in three services, post, feed and notification.
 The post service is responsible to handle the post creation, to handle the high throughput 
 we can have multiple replicas along with the use of queries. This service create a message 

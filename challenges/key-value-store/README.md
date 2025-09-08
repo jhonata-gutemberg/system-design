@@ -1,23 +1,26 @@
-# Key Value Store
+![Key Value Store](docs/assets/key-value-store.png)
 
-## Requirements
+## 📋 Requirements
 
 ### Functional
-- [x] Should be able to put data on the storage
-- [x] Should be able to retrieve data from the storage
+- Should be able to put data on the storage
+- Should be able to retrieve data from the storage
 
 ### Non-functional
-- [X] The size of a key-value pair is small: less than 10 KB
-- [X] Ability to store big data
-- [X] High availability: The system responds quickly, even during failures
-- [X] High scalability: The system can be scaled to support large data set
-- [X] Automatic scaling: The addition/deletion of servers should be automatic based on traffic
-- [X] Tunable consistency
-- [X] Low latency
+- Ability to store big data
+- High availability: The system responds quickly, even during failures
+- High scalability: The system can be scaled to support large data set
+- Automatic scaling: The addition/deletion of servers should be automatic based on traffic
+- Tunable consistency
+- Low latency
 
-## Architecture
-![Key-value-store](assets/key-value-store.excalidraw.png)
+## 🧬 Characteristics
+- The size of a key-value pair is small: less than 10 KB
 
+## 🏗️ High-level design
+![Key-value-store](docs/assets/key-value-store.excalidraw.png)
+
+## 🔍 Deep dive
 ### Data compression and consistent hashing
 To optimize the memory usage of single store instance, compression can be used.
 But this is not enough to store a massive amount of data, to that the data need to be distributed 
@@ -44,7 +47,7 @@ but it can also lead to inconsistencies. In order to detect and reconcile confli
 every modification as a new immutable version of data and use a lock strategy like vector clock.
 Where we store a pair of server and version, along with the data and use this information to make the
 inconsistency detection and reconciliation.
-![Vector clock](assets/vector-clock.png)
+![Vector clock](docs/assets/vector-clock.png)
 
 ### Gossip protocol
 To detect failures in a decentralized way we can use methods like the gossip protocol. 
@@ -56,7 +59,8 @@ propagate to another set of nodes.
 * Each node should update the memberlist which the lastest info.
 * If the heartbeat value has not increased for more than predefined periods, the member is
 considered offline.
-![Gossip protocol](assets/gossip-protocol.png)
+
+![Gossip protocol](docs/assets/gossip-protocol.png)
 
 ### Handling temporary failures
 After detecting a failure, we need some strategies to ensure availability.
@@ -69,4 +73,5 @@ and them push back the changes when the server was up again.
 To handle permanent failures we need another strategies like anti-entropy protocol. This protocol 
 involves comparing each piece of data on replicas and updating each replica to the newest version.
 To detect this king of failure we can use a merkle tree. 
-![Merkle tree](assets/merkle-tree.png)
+
+![Merkle tree](docs/assets/merkle-tree.png)
