@@ -1,20 +1,26 @@
-# Chat system
-## Requirements
+![Chat system](docs/assets/chat-system.png)
+## 📋 Requirements
 ### Functional
-- [x] Should support 1 on 1 chat.
-- [x] Should support group chat.
-- [x] Should support online indicator.
-- [x] Should support multi-device.
+- Should support 1 on 1 chat.
+- Should support group chat.
+- Should support online indicator.
+- Should support multi-device.
 ### Non-functional
-- [x] Should support 50 million daily active users (DAU).
-- [x] The chat history should be stored indefinitely.
-- [x] Low latency
-## Architecture
-![Chat system](assets/chat-system.excalidraw.png)
+- Low latency
+
+## 🧬 Characteristics
+- Should support 50 million daily active users (DAU).
+- The chat history should be stored indefinitely.
+
+## 🏗️ High-level design
+![Chat system](docs/assets/chat-system.excalidraw.png)
+
 In order to scale the chat capability, the system was split in four services,
 respectively authentication, contacts, chat and presence.
 To distribute the requests to the right server instances we can use a API gateway, 
 and also take advantage of load balancing and rate limiting.
+
+## 🔍 Deep dive
 ### Authentication
 The first step on the user journey is to authenticate, is this step the user send their login information 
 and the service verifies on database if the user exists returning a session token. When the user login we 

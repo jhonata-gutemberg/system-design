@@ -23,7 +23,7 @@ and effectively, especially when the system is large or expected to handle a lot
 | [Parking Lot System](challenges/parking-lot-system)         |
 | [Fitness Tracking App](challenges/fitness-tracking-app)     |
 | [Rate Limiter](challenges/rate-limiter)                     |
-| Chat System                                                 |
+| [Chat System](challenges/chat-system)                       |
 | Key Value Store                                             |
 | News Feed                                                   |
 | Web Crawler                                                 |
